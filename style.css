@@ -8,9 +8,8 @@
 
 body {
   font-family: Raleways, sans-serif;
-  padding: 0;
-  margin: 0px;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -85,9 +84,8 @@ p {
 #maps {
   display: inline-flex;
   flex-direction: row;
-  margin: 12px 12px 0px 12px;
-  padding: 12px 12px 0px 12px;
 }
+
 #iconmaps {
   display: flex;
   justify-content: center;
@@ -110,15 +108,14 @@ form {
 
 #search {
   padding: 0 0 0 20px;
-  height: 50px;
-  width: 220px;
+  height: auto;
+  width: 220 px;
   border: none;
   border-top: solid 1px var(--color3);
   border-bottom: solid 1px var(--color3);
-  margin: 12px;
 }
 #search::placeholder {
-  color: var(--color3);
+  color: black;
   font-size: 16px;
   font-weight: 600;
 }
