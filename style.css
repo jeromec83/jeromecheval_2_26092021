@@ -8,7 +8,6 @@
 
 body {
   font-family: Raleways, sans-serif;
-  
 }
 ul {
   margin: 0;
@@ -16,6 +15,11 @@ ul {
 }
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 /************************** HEADER *********************************/
 
@@ -124,7 +128,7 @@ button {
   cursor: pointer;
 }
 /************************** FILTERS *************************/
-.filters{
+.filters {
   margin-bottom: 20px;
 }
 
@@ -181,7 +185,7 @@ button {
 .infos p {
   display: inline;
 }
-.infos{
+.infos {
   margin-bottom: 20px;
 }
 /*********************************** HEBERGEMENT ************************/
@@ -204,18 +208,23 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 16px 16px;
-  margin: 20px;
-  padding: 20px:
+  gap: 20px 40px;
+  margin: 20px 35px 20px 20px;
+}
+
+.marseille :hover a {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: ease 0.4s;
 }
 
 .case {
   display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: stretch;
-	align-content: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
   background: white;
   border-radius: 20px;
   border: 5px solid transparent;
@@ -230,21 +239,21 @@ button {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.text h4{
+.text h4 {
   margin-block-start: 0em;
   margin-block-end: 1em;
 }
-.text p{
+.text p {
   margin-block-start: 0em;
   margin-block-end: 1em;
 }
 .text {
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   padding: 10px;
 }
 
@@ -252,11 +261,11 @@ button {
   color: var(--color1);
 }
 
-#empty{
+#empty {
   color: var(--color2);
-} 
+}
 
-#afficher{
+#afficher {
   font-size: 1rem;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -268,7 +277,7 @@ button {
   background-color: var(--color3);
   border-radius: 20px;
 }
-#poptitre h4{
+#poptitre h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
@@ -278,28 +287,32 @@ button {
   margin: 0px 20px;
   padding: 15px 20px;
 }
-#populaire{
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap : 50px 0px;
+#populaire {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 0px;
   margin-top: 20px;
 }
-
-.casepop h4{
+#populaire :hover a {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: ease 0.4s;
+}
+.casepop h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
-.casepop p{
+.casepop p {
   margin-block-start: 0em;
-  margin-block-end: 1em; 
+  margin-block-end: 1em;
 }
 
-.casepop{
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 15px; 
+.casepop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
   background: white;
   border-radius: 20px;
   border: 5px solid transparent;
@@ -309,19 +322,19 @@ button {
   height: 90%;
 }
 
-#textpop{
+#textpop {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#imgpop{
+#imgpop {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   align-content: stretch;
 }
-.casepop img{
+.casepop img {
   width: 100%;
   height: 100%;
   max-height: 110px;
@@ -331,6 +344,9 @@ button {
 }
 
 /**************** ACTIVITES *********************/
+#activites h4 {
+  margin-top: 60px;
+}
 .acts {
   height: 550px;
   margin-bottom: 50px;
@@ -346,6 +362,11 @@ button {
     "act1 act3 act4 act6"
     "act1 act3 act4 act6";
 }
+
+.activity h5 {
+  color: black;
+}
+
 .activity {
   position: relative;
   width: 100%;
@@ -359,6 +380,17 @@ button {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+.activity:hover {
+  transform: scale(1.01);
+  transition: ease 0.2s;
+}
+
+.activity:hover h5 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
 }
 
 #titre {
@@ -400,4 +432,8 @@ button {
   align-content: flex-start;
   background-color: var(--color3);
   margin-bottom: 40px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
