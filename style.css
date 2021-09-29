@@ -52,17 +52,18 @@ header li a {
   border: 3px solid transparent;
 }
 
+#heb a,
+#inscrire a {
+  font-weight: bold;
+  color: var(--color1);
+}
+#acti a {
+  font-weight: bold;
+}
 header li a:hover {
   border-top: 3px solid var(--color1);
 }
 
-header li a:active {
-  color: aqua;
-}
-
-header li a:visited {
-  color: black;
-}
 /************************************* MAIN ****************/
 main {
   width: 98%;
@@ -106,7 +107,7 @@ form {
 #search {
   padding: 20px 0 20px 20px;
   height: auto;
-  width: 220 px;
+  width: auto;
   border: none;
   border-top: solid 1px var(--color3);
   border-bottom: solid 1px var(--color3);
@@ -133,7 +134,7 @@ button {
 }
 
 .filters h3 {
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   display: inline;
 }
 
@@ -211,20 +212,13 @@ button {
   gap: 20px 40px;
   margin: 20px 35px 20px 20px;
 }
-
-.marseille :hover a {
+.case:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.1);
   transition: ease 0.4s;
 }
 
 .case {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: stretch;
   background: white;
   border-radius: 20px;
   border: 5px solid transparent;
@@ -234,12 +228,17 @@ button {
 
 .case img {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-size: 100% 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.text h4 {
+.text {
+  padding-left: 10px;
+  line-height: 0.5em;
+}
+
+text h4 {
   margin-block-start: 0em;
   margin-block-end: 1em;
 }
@@ -247,21 +246,12 @@ button {
   margin-block-start: 0em;
   margin-block-end: 1em;
 }
-.text {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  padding: 10px;
-}
 
 .stars {
   color: var(--color1);
 }
 
-#empty {
+.hostingMainCardGradeIconempty {
   color: var(--color2);
 }
 
@@ -294,11 +284,12 @@ button {
   gap: 50px 0px;
   margin-top: 20px;
 }
-#populaire :hover a {
+.casepop:hover {
   cursor: pointer;
   transform: scale(1.02);
   transition: ease 0.4s;
 }
+
 .casepop h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -322,12 +313,12 @@ button {
   height: 90%;
 }
 
-#textpop {
+.textpop {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#imgpop {
+.imgpop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,7 +384,7 @@ button {
   color: black;
 }
 
-#titre {
+.titre {
   position: absolute;
   width: 95%;
   background-color: white;
@@ -428,8 +419,7 @@ button {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
-  align-content: flex-start;
+  align-items: flex-start;
   background-color: var(--color3);
   margin-bottom: 40px;
 }
