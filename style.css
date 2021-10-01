@@ -32,6 +32,10 @@ header {
 nav {
   overflow: hidden;
 }
+.navbarphone {
+  display: none;
+}
+
 #logo {
   display: block;
   float: left;
@@ -90,7 +94,7 @@ h1 {
   align-items: center;
   width: 55px;
   height: auto;
-  background-color: #f2f2f2;
+  background-color: var(--color3);
   border-radius: 14px 0 0 14px;
 }
 .fa-map-marker {
@@ -120,7 +124,7 @@ form {
 
 button {
   border-radius: 0 14px 14px 0;
-  background-color: #0065fc;
+  background-color: var(--color1);
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -159,7 +163,7 @@ button {
 
 .filters ul li:hover {
   cursor: pointer;
-  background: #deebff;
+  background: var(--color2);
   transition-duration: 0.25s;
 }
 
@@ -169,15 +173,15 @@ button {
 }
 
 .icon-filter {
-  background-color: #deebff;
-  color: #0065fc;
+  background-color: var(--color2);
+  color: var(--color1);
   padding: 18px;
   border-radius: 200px;
   margin-right: 15px;
 }
 
 .infos .fas {
-  color: #0065fc;
+  color: var(--color1);
   font-size: 16px;
   padding: 7px 11px 7px 11px;
   border: solid 1px #d9d9d9;
@@ -519,29 +523,57 @@ text h4 {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 375px) {
+  header {
+    width: 98%;
+    max-width: 375px;
+    margin: auto;
+  }
+
   .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "logo inscrire"
-      "heb acti";
+    display: none;
   }
-  .navbar img {
-    grid-area: logo;
+
+  .navbarphone {
+    display: revert;
   }
-  .navbar #inscrire {
-    grid-area: inscrire;
+
+  #logophone {
+    float: left;
   }
-  .navbar #heb {
-    flex-direction: column-reverse;
-    grid-area: heb;
+
+  #inscrirephone {
+    float: right;
   }
-  .navbar #acti {
-    flex-direction: column-reverse;
-    grid-area: acti;
+
+  header ul {
+    display: inline-flex;
+    float: none;
+    margin: 0px;
   }
+  header li {
+    float: none;
+    inline-size: 170px;
+    height: 70px;
+  }
+  header li a {
+    color: black;
+    border: none;
+    border-bottom: 3px solid var(--color2);
+  }
+
+  header p a {
+    font-weight: bold;
+    color: var(--color1);
+  }
+
+  header li a:hover {
+    border-top: 0px;
+    border-bottom: 3px solid var(--color1);
+    border-radius: 0px;
+    color: var(--color1);
+  }
+
   button {
     display: none;
   }
