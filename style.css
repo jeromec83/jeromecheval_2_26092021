@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 
 :root {
   --color1: #0065fc;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Raleways, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 ul {
   margin: 0;
@@ -74,12 +74,15 @@ main {
   max-width: 1440px;
   margin: auto;
 }
-
-/*************************** H1 + P **********************/
 h1 {
-  font-size: 1.2rem;
+  font-size: 32px;
 }
-
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 19px;
+}
 /************************ Maps ********************/
 
 #maps {
@@ -140,7 +143,7 @@ button {
 }
 
 .filters h3 {
-  font-size: 0.8rem;
+  font-size: 16px;
   display: inline;
 }
 
@@ -239,19 +242,6 @@ button {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.text {
-  padding-left: 10px;
-  line-height: 0.5em;
-}
-
-text h4 {
-  margin-block-start: 0em;
-  margin-block-end: 1em;
-}
-.text p {
-  margin-block-start: 0em;
-  margin-block-end: 1em;
-}
 
 .stars {
   color: var(--color1);
@@ -262,9 +252,7 @@ text h4 {
 }
 
 #afficher {
-  font-size: 1rem;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  font-size: 16px;
   margin: 0px 20px;
   padding: 30px 20px;
 }
@@ -273,15 +261,17 @@ text h4 {
   background-color: var(--color3);
   border-radius: 20px;
 }
-#poptitre h4 {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
+
 #poptitre {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0px 20px;
   padding: 15px 20px;
+}
+#poptitre h3 {
+  margin: 0px;
+  padding: 0px;
 }
 #populaire {
   display: grid;
@@ -384,7 +374,7 @@ text h4 {
   transition: ease 0.2s;
 }
 
-.activity:hover h5 {
+.activity:hover h4 {
   letter-spacing: 2px;
   text-align: center;
   color: black;
@@ -429,6 +419,10 @@ text h4 {
   background-color: var(--color3);
   margin-bottom: 40px;
 }
+h5 {
+  font-size: 18px;
+}
+)
 
 .footer a:hover {
   text-decoration: underline;
@@ -523,10 +517,10 @@ text h4 {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   header {
     width: 98%;
-    max-width: 375px;
+    max-width: 576px;
     margin: auto;
   }
 
@@ -573,7 +567,12 @@ text h4 {
     border-radius: 0px;
     color: var(--color1);
   }
-
+  header li a:visited {
+    border-top: 0px;
+    border-bottom: 3px solid var(--color1);
+    border-radius: 0px;
+    color: var(--color1);
+  }
   button {
     display: none;
   }
@@ -589,6 +588,10 @@ text h4 {
     width: 400px;
     height: 25px;
   }
+  .filters ul li {
+    padding: 0 12px 0 0;
+    margin-left: 5px;
+  }
 
   #hebergementpopulaire {
     grid-template-columns: 1fr;
@@ -598,7 +601,26 @@ text h4 {
       "bloc-populaire"
       "bloc-hebergement";
   }
-
+  #hebergement {
+    background-color: transparent;
+  }
+  #hebergement h3 {
+    margin: 0px;
+    padding: 0px 20px;
+  }
+  #pop {
+    border-radius: 0px;
+  }
+  #poptitre {
+    margin: 0px;
+  }
+  #poptitre h3 {
+    margin: 0px;
+  }
+  #afficher {
+    margin: 0px 20px;
+    padding: 0px 20px 30px 20px;
+  }
   .marseille {
     display: flex;
     flex-direction: column;
@@ -606,6 +628,15 @@ text h4 {
   .activity img {
     max-height: 270px;
     min-height: 270px;
+  }
+  .activity {
+    position: relative;
+    left: 20px;
+    width: 87%;
+  }
+  #activites h3 {
+    margin: 0px;
+    padding: 15px 20px;
   }
   .acts {
     display: grid;
