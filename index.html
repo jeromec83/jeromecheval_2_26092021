@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <title>Reservia</title>
 </head>
 <body>
@@ -31,19 +35,19 @@
             </div>
         </nav>
     </header>
-    <Main>
+    <main>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <p class="intro">En plein centre ville ou en pleine nature</p>
         <div id="maps">
             <div id="iconmaps">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
 
-            <Form>
-                <input type="text" placeholder="Marseille, France" id="search">
-                <button>Rechercher</button>
-                <button class="button-research searchFormSubmitinputIcon fas fa-search" id="icon-glass"></button>
-            </Form>
+           
+            <input type="text" Value="Marseille, France" id="search">
+            <button>Rechercher</button>
+            <button class="button-research searchFormSubmitinputIcon fas fa-search" id="icon-glass"></button>
+   
         </div>
 
         <div class="filters">
@@ -70,7 +74,7 @@
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Aubèrge de la Cannebière">
                         <div class="text">
                             <h4>Aubèrge de la Cannebière</h4>
-                            <P>Nuit à partir de <strong>25€</strong></P>
+                            <p>Nuit à partir de <span class="prix">25€</span></p>
                             <div class="stars">
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -86,7 +90,7 @@
                         <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port">
                         <div class="text">
                             <h4>Hôtel du Port</h4>
-                            <P>Nuit à partir de <strong>52€</strong></P>
+                            <p>Nuit à partir de <span class="prix">52€</span></p>
                             <div class="stars">
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -102,7 +106,7 @@
                         <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les Mouettes">
                         <div class="text">
                             <h4>Hôtel les Mouettes</h4>
-                            <P>Nuit à partir de <strong>76€</strong></P>
+                            <p>Nuit à partir de <span class="prix">76€</span></p>
                             <div class="stars">
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -118,7 +122,7 @@
                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Aubèrge de la Mer">
                         <div class="text">
                             <h4>Aubèrge de la Mer</h4>
-                            <P>Nuit à partir de <strong>45€</strong></P>
+                            <p>Nuit à partir de <span class="prix">45€</span></p>
                             <div class="stars">
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -134,7 +138,7 @@
                         <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Aubèrge du Panier">
                         <div class="text">
                             <h4>Aubèrge du Panier</h4>
-                            <P>Nuit à partir de <strong>23€</strong></P>
+                            <p>Nuit à partir de <span class="prix">23€</span></p>
                             <div class="stars">
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -150,7 +154,7 @@
                         <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                         <div class="text">
                             <h4>Hôtel chez Amina</h4>
-                            <P>Nuit à partir de <strong>96€</strong></P>
+                            <p>Nuit à partir de <span class="prix">96€</span></p>
                             <div class="stars">
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
                                 <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -178,7 +182,7 @@
                     </div>
                     <div class="textpop">
                         <a href="#"><h4>Hôtel le Soleil du Matin</h4></a>
-                        <a href="#"><P>Nuit à partir de <strong>128€</strong></P></a>
+                        <a href="#"><p>Nuit à partir de <span class="prix">128€</span></p></a>
                         <div class="stars">
                             <div class="fas fa-star hostingMainCardGradeIcon"></div>
                             <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -194,7 +198,7 @@
                     </div>
                     <div class="textpop"> 
                         <a href="#"><h4>Au coeur de l'eau Chambres d'hôtes</h4></a>
-                        <a href="#"><P>Nuit à partir de <strong>71€</strong></P></a>   
+                        <a href="#"><p>Nuit à partir de <span class="prix">71€</span></p></a>   
                         <div class="stars">
                             <div class="fas fa-star hostingMainCardGradeIcon"></div>
                             <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -210,7 +214,7 @@
                     </div>
                     <div class="textpop">  
                         <a href="#"><h4>Hôtel Tout bleu et blanc</h4></a>
-                        <a href="#"><P>Nuit à partir de <strong>68€</strong></P></a>
+                        <a href="#"><p>Nuit à partir de <span class="prix">68€</span></p></a>
                         <div class="stars">
                             <div class="fas fa-star hostingMainCardGradeIcon"></div>
                             <div class="fas fa-star hostingMainCardGradeIcon"></div>
@@ -256,11 +260,11 @@
             </div>
         </div>
     </section>
-</Main>
+</main>
 <footer>
-    <Section class="footer" id="pieddepage">
+    <section class="footer" id="pieddepage">
         <div id="apropos">
-            <h5>A porpos</h5>
+            <h5>A propos</h5>
             <ul>
                 <li><a href="#"><p>Fonctionnement du site</p></a></li>
                 <li><a href="#"><p>Conditions génerale de vente</p></a></li>
@@ -281,7 +285,7 @@
                 <li><a href="#"><p>Nous contacter</p></a></li>
             </ul>
         </div>
-    </Section>
+    </section>
 </footer>
 </body>
 </html>
