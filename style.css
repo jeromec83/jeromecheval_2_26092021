@@ -91,6 +91,7 @@ h4 {
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 20px;
+  
 }
 
 #iconmaps {
@@ -120,11 +121,12 @@ form {
   border: none;
   border-top: solid 1px var(--color3);
   border-bottom: solid 1px var(--color3);
+  height: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
 }
 #search::placeholder {
-  
-  color: grey;
-  font-size: 16px;
   font-weight: 600px;
 }
 
@@ -572,13 +574,9 @@ h5 {
     border-bottom: 3px solid var(--color1);
     border-radius: 0px;
     color: var(--color1);
+    font-weight: bold;
   }
-  header li a:visited {
-    border-top: 0px;
-    border-bottom: 3px solid var(--color1);
-    border-radius: 0px;
-    color: var(--color1);
-  }
+ 
   button {
     display: none;
   }
