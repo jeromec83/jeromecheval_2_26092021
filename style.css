@@ -485,7 +485,7 @@ h5 {
   }
 }
 /********* Medie Queries ********************/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) /*ordi portable+tablette*/{
   header {
     width: 98%;
     max-width: 992px;
@@ -523,7 +523,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) /*telephone*/{
   header {
     width: 98%;
     max-width: 576px;
