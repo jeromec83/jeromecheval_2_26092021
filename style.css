@@ -91,7 +91,6 @@ h4 {
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 20px;
-  
 }
 
 #iconmaps {
@@ -487,7 +486,7 @@ h5 {
   }
 }
 /********* Medie Queries ********************/
-@media screen and (max-width: 992px) /*ordi portable+tablette*/{
+@media screen and (max-width: 992px) /*ordi portable+tablette*/ {
   header {
     width: 98%;
     max-width: 992px;
@@ -525,7 +524,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 576px) /*telephone*/{
+@media screen and (max-width: 576px) /*telephone*/ {
   header {
     width: 98%;
     max-width: 576px;
@@ -576,7 +575,7 @@ h5 {
     color: var(--color1);
     font-weight: bold;
   }
- 
+
   button {
     display: none;
   }
