@@ -59,6 +59,9 @@ header li a {
   font-weight: bold;
   color: var(--color1);
 }
+#heb a{
+  border-top: 3px solid var(--color1);
+}
 #acti a {
   font-weight: bold;
 }
@@ -126,7 +129,7 @@ form {
   color: grey;
 }
 #search::placeholder {
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 button {
